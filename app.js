@@ -1,4 +1,4 @@
-const defaultsize = 16;
+// const defaultsize = 16;
 const grid = document.getElementById("container");
 const colorBtn = document.getElementById("color");
 const rainbowBtn = document.getElementById("rainbow");
@@ -44,3 +44,21 @@ function rainbowMode() {
 
 }
 rainbowMode()
+
+function eraserGrid() {
+  const boxs = grid.querySelectorAll('.box');
+  eraserBtn.addEventListener('click', () => {
+    boxs.forEach(box => box.addEventListener('mouseover', () => {
+      box.style.background = '#fefefe';
+  }))
+})
+}
+eraserGrid();
+
+function clearGrid() {
+  const boxs = grid.querySelectorAll('.box');
+  clearBtn.addEventListener('click',() =>{
+  boxs.forEach(box => box.remove());
+ } )
+}
+clearGrid()
