@@ -20,5 +20,23 @@ background-color: #c4c1e0;
 }
 .flex-nav {
   display: flex;
+  margin-top: 5px;
 
+}
+.btn {
+  padding: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: #7c73e6;
+  color: white;
+}
+
+#sizeValue {
+  padding: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+  color: #7c73e6;
+  font-size: 20px;
 }
